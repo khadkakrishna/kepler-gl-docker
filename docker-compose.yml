@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: "krishnakhadka/kepler-gl"
+    tty: true
+    ports:
+        - "$KEPLER_PORT:8080"
+    env_file:
+     - ./.env
