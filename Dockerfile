@@ -2,7 +2,7 @@ FROM node:18-alpine
 
 LABEL maintainer="Krishna Khadka <krishnakhadka2802@gmail.com>"
 
-RUN apk update && apk upgrade && apk add git && apk add yarn
+RUN apk update && apk upgrade && apk add git
 
 RUN git clone https://github.com/keplergl/kepler.gl.git
 
