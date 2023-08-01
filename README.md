@@ -22,21 +22,21 @@ This code deploys kepler.gl [demo-app](https://github.com/keplergl/kepler.gl/tre
 
 1. Pull the image using following command
 ```bash
-docker pull krishnakhadka/kepler-gl:latest
+docker pull krishnakhadka/keplergl:latest
 ```
 
 2. Run the container 
 ```bash
-docker run --name kepler-gl -p 8080:8080 -d krishnakhadka/kepler-gl:latest
+docker run --name keplergl -p 8080:8080 -d krishnakhadka/keplergl:latest
 ```
 
 3. Provide MapboxAccessToken in the run command (if available)
 ```bash
-docker run --name kepler-gl -p 8080:8080 -e MapboxAccessToken="GeneratedMapboxAccessToken" -d krishnakhadka/kepler-gl:latest
+docker run --name keplergl -p 8080:8080 -e MapboxAccessToken="GeneratedMapboxAccessToken" -d krishnakhadka/keplergl:latest
 ```
 
 ## Build the application from *Dockerfile*
 Following command can be used for building the image 
 ```bash
-docker build -t krishnakhadka/kepler-gl https://github.com/khadkakrishna/kepler-gl-docker.git
+docker build -t krishnakhadka/keplergl https://github.com/khadkakrishna/kepler-gl-docker.git
 ```
