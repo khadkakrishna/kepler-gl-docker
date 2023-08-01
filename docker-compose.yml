@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: "krishnakhadka/kepler-gl"
+    image: "krishnakhadka/keplergl"
     tty: true
     ports:
         - "$KEPLER_PORT:8080"
