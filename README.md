@@ -5,6 +5,11 @@
 <img width="120" alt="Kepler.gl" src="./_images/docker-logo.png" hspace="20">
 </p>
 
+### Where to find the image?
+This docker image is avaialble to pull in docker hub, refer [here](https://hub.docker.com/repository/docker/krishnakhadka/keplergl/general)
+
+
+### What this image deploys?
 This code deploys kepler.gl [demo-app](https://github.com/keplergl/kepler.gl/tree/master/examples/demo-app) in docker container
 
 
