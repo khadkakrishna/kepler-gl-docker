@@ -40,3 +40,19 @@ Following command can be used for building the image
 ```bash
 docker build -t krishnakhadka/keplergl https://github.com/khadkakrishna/kepler-gl-docker.git
 ```
+
+### Buildx for pushing multi-architecture images
+
+Create a new builder
+> docker buildx create --name mybuilder --bootstrap --use
+> docker buildx use mybuilder
+> docker buildx inspect mybuilder
+
+build the Docker Image for arm64 and amd64
+> docker buildx build --push --platform linux/arm64,linux/amd64 --tag krishnakhadka/keplergl:latest .
+
+inspect the image
+> docker buildx imagetools inspect krishnakhadka/keplergl:latest
+
+remove buildx builder
+> docker buildx rm mybuilder
